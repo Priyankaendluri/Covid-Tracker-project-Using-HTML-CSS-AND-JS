@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <link rel="stylesheet" href="/home/priynka/Covid-19.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COVID-19 Tracker</h1>
+        <div class="stats">
+            <div class="stat" id="totalCases">
+                <h2>Total Cases</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="stat" id="totalDeaths">
+                <h2>Total Deaths</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="stat" id="totalRecovered">
+                <h2>Total Recovered</h2>
+                <p>Loading...</p>
+            </div>
+        </div>
+        <div class="country-search">
+            <input type="text" id="country" placeholder="Enter Country" />
+            <button onclick="getCountryData()">Search</button>
+        </div>
+        <div id="countryData"></div>
+    </div>
+
+    <script src="/home/priynka/Covid-19.js"></script>
+</body>
+</html>
+
